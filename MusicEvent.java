@@ -1,4 +1,4 @@
 
-public class MusicEvent {
+public class MusicEvent extends Event {
 
 }

@@ -1,4 +1,4 @@
 
-public class Venue {
+public class Venue implements Comparable,Displayable {
 
 }

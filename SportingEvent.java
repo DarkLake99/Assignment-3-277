@@ -1,4 +1,4 @@
 
-public class SportingEvent {
+public class SportingEvent extends Event {
 
 }
