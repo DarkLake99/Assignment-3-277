@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.ArrayList;
 
 public abstract class Event implements Comparable<Event> {
 	private String mEventName;
@@ -11,5 +12,10 @@ public abstract class Event implements Comparable<Event> {
 		mVenueName = venue_name;
 		mDate = DateUtil.convertStringDatetoCalendarDate(date);
 		mTicketPrice = price;
+	}
+	
+	public int compareTo(Event e)
+	{
+		
 	}
 }

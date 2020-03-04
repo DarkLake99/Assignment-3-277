@@ -1,4 +1,6 @@
 
+
 public interface Comparable {
-	Object compare();
+	//Object compare();
+	public int compareTo();
 }
