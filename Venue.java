@@ -1,5 +1,5 @@
 
-public class Venue implements Comparable {
+public class Venue implements Comparable<Venue> {
 	private String mName;
 	private int mCapacity;
 	public Venue(String name_input, int capacity_input) {
@@ -8,6 +8,6 @@ public class Venue implements Comparable {
 	}
 	@Override
 	public int compareTo(Venue v) {
-		return mCapacity - v.mCapacity;
+		return this.mCapacity - v.mCapacity;
 	}
 }

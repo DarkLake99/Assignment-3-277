@@ -2,6 +2,7 @@
 public class CashTicketPurchase extends TicketPurchase
 {
 	private int cash;
+	/*
 	public CashTicketPurchase(Subscriber sub)
 	{
 		super(sub, new Event());
@@ -10,7 +11,8 @@ public class CashTicketPurchase extends TicketPurchase
 	{
 		super(sub, event, new DateUtil());
 	}
-	public CashTicketPurchase(Subscriber sub, Event event,DateUtil date, int cashPurchase )
+	*/
+	public CashTicketPurchase(Subscriber sub, Event event, DateUtil date, int cashPurchase )
 	{
 		super(sub, event, date);
 		cash = cashPurchase;
