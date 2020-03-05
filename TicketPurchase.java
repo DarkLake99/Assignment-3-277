@@ -1,9 +1,9 @@
-
+import java.util.Calendar;
 public abstract class TicketPurchase 
 {
 	private Subscriber sub;
 	private Event event;
-	private DateUtil date;
+	private Calendar date;
 	/*
 	public TicketPurchase(Subscriber addSub)
 	{
@@ -14,11 +14,11 @@ public abstract class TicketPurchase
 		this(aSub, eve, new DateUtil());
 	}
 	*/
-	public TicketPurchase(Subscriber subs, Event eve, DateUtil eveDate) 
+	public TicketPurchase(Subscriber subs, Event eve, String eveDate) 
 	{
 		sub = subs;
 		event = eve;
-		date = eveDate;
+		date = DateUtil.convertStringDatetoCalendarDate(eveDate);
 	}
 	
 }

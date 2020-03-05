@@ -8,8 +8,6 @@ public class SportingEvent extends Event {
 		mTeamOne = teamOne;
 		mTeamTwo = teamTwo;
 	}
-	
-
 	public int compareTo(Event e) {
 		
 

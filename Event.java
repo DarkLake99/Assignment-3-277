@@ -1,7 +1,7 @@
 import java.util.Calendar;
 import java.util.ArrayList;
 
-public abstract class Event implements Comparable {
+public abstract class Event implements Comparable<Event> {
 	private String mEventName;
 	private Venue mVenueName;
 	private Calendar mDate;
