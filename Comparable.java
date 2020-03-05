@@ -2,5 +2,5 @@
 
 public interface Comparable {
 	//Object compare();
-	public int compareTo();
+	int compareTo(Event e);
 }

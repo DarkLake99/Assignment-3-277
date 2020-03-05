@@ -14,10 +14,11 @@ public abstract class Event implements Comparable {
 		mTicketPrice = price;
 	}
 	
-	public int compareTo(Event e)
+	/*@Override
+	public int compareTo()
 	{
-		
-	}
+		return 0;
+	} */
 	
 	public String getEventName()
 	{

@@ -9,8 +9,8 @@ public class SportingEvent extends Event {
 		mTeamTwo = teamTwo;
 	}
 	
-	@Override
+
 	public int compareTo(Event e) {
-		
+		return 0;
 	}
 }

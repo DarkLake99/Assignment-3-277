@@ -11,6 +11,7 @@ public class MusicEvent extends Event {
 	
 		MusicEvent m = (MusicEvent)e;
 		
-		return this.mBandName.compareTo(m.mBandName);
+		//return this.mBandName.compareTo(m.mBandName);
+		return 0;
 	}
 }
