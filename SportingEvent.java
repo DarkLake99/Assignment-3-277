@@ -32,6 +32,11 @@ public class SportingEvent extends Event {
 	public void addTicketPurchase(TicketPurchase t) {
 		
 	}
+	@Override
+	public String getType()
+	{
+		return "Sporting";
+	}
 	//TODO
 	public ArrayList<TicketPurchase> getTicketPurchases(String date) {
 		ArrayList<TicketPurchase> list = new ArrayList<TicketPurchase>();

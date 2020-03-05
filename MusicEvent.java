@@ -28,6 +28,11 @@ public class MusicEvent extends Event {
 	public void addTicketPurchase(TicketPurchase t) {
 		
 	}
+	@Override
+	public String getType()
+	{
+		return "Music";
+	}
 	//TODO
 	public ArrayList<TicketPurchase> getTicketPurchases(String date) {
 		ArrayList<TicketPurchase> list = new ArrayList<TicketPurchase>();

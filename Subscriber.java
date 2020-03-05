@@ -13,7 +13,7 @@ public class Subscriber
 	}
 	@Override
 	public String toString() {
-		return mName + ", Born: " + mBirthDate;
+		return mName + ", Born: " + DateUtil.getFormattedDate(mBirthDate);
 	}
 	public void addTicketPurchase(TicketPurchase t) {
 		

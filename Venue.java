@@ -10,9 +10,18 @@ public class Venue implements Comparable<Venue> {
 	}
 	@Override
 	public int compareTo(Venue v) {
-		return this.mCapacity - v.mCapacity;
+		return v.mCapacity- this.mCapacity;
 	}
 	public String getName() {
 		return mName;
+	}
+	public int getCapacity()
+	{
+		return mCapacity;
+	}
+	@Override
+	public String toString()
+	{
+		return mName + ", Capacity: " + mCapacity;
 	}
 }
