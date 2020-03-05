@@ -1,5 +1,6 @@
 import java.util.Calendar;
 import java.util.ArrayList;
+import java.util.ArrayList;
 
 public abstract class Event implements Comparable<Event> {
 	private String mEventName;
@@ -25,6 +26,10 @@ public abstract class Event implements Comparable<Event> {
 		return mEventName;
 	}
 	
+	public double getTicketPrice() {
+		return mTicketPrice;
+	}
+	
 	public Venue getVenue()
 	{
 		return mVenueName;
@@ -39,8 +44,12 @@ public abstract class Event implements Comparable<Event> {
 	@Override
 	public String toString()
 	{
-		return "Event: " + mEventName +" Venue: " + mVenueName.getName() + " Date: " + mDate + " Price: " + mTicketPrice;
+		return "Event: " + mEventName +" Venue: " + mVenueName + " Date: " + mDate + " Price: " + mTicketPrice;
 	}
 	public abstract void addTicketPurchase(TicketPurchase t);
+	
+	public abstract ArrayList<TicketPurchase> getTicketPurchases(String date);
+	
+	
 	
 }

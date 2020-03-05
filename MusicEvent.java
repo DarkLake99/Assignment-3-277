@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class MusicEvent extends Event {
 	private String mBandName;
 	public MusicEvent(String eventName, Venue vObj, String date, double ticketPrice, String band) {
@@ -22,8 +24,13 @@ public class MusicEvent extends Event {
 	{
 		return mBandName;
 	}
-	
+	//TODO
 	public void addTicketPurchase(TicketPurchase t) {
 		
+	}
+	//TODO
+	public ArrayList<TicketPurchase> getTicketPurchases(String date) {
+		ArrayList<TicketPurchase> list = new ArrayList<TicketPurchase>();
+		return list;
 	}
 }

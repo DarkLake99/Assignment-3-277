@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class SportingEvent extends Event {
 	private String mTeamOne;
@@ -27,8 +28,13 @@ public class SportingEvent extends Event {
 	{
 		return mTeamOne;
 	}
-	
+	//TODO
 	public void addTicketPurchase(TicketPurchase t) {
 		
+	}
+	//TODO
+	public ArrayList<TicketPurchase> getTicketPurchases(String date) {
+		ArrayList<TicketPurchase> list = new ArrayList<TicketPurchase>();
+		return list;
 	}
 }
