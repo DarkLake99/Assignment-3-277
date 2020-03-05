@@ -1,20 +1,11 @@
 import java.util.Calendar;
 public abstract class TicketPurchase 
 {
-	private Subscriber sub;
+	private String sub;
 	private Event event;
 	private Calendar date;
-	/*
-	public TicketPurchase(Subscriber addSub)
-	{
-		this(addSub, new Event());
-	}
-	public TicketPurchase(Subscriber aSub, Event eve)
-	{
-		this(aSub, eve, new DateUtil());
-	}
-	*/
-	public TicketPurchase(Subscriber subs, Event eve, String eveDate) 
+
+	public TicketPurchase(String subs, Event eve, String eveDate) 
 	{
 		sub = subs;
 		event = eve;
