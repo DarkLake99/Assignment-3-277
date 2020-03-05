@@ -12,7 +12,7 @@ public class CreditTicketPurchase extends TicketPurchase {
 		super(sub, event, new DateUtil());
 	}
 	*/
-	public CreditTicketPurchase(Subscriber sub, Event event, DateUtil date)
+	public CreditTicketPurchase(Subscriber sub, Event event, String date)
 	{
 		super(sub, event, date);
 		credit = 0;
