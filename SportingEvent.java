@@ -27,4 +27,8 @@ public class SportingEvent extends Event {
 	{
 		return mTeamOne;
 	}
+	
+	public void addTicketPurchase(TicketPurchase t) {
+		
+	}
 }

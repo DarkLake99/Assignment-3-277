@@ -12,4 +12,7 @@ public class Subscriber
 	public String toString() {
 		return mName + ", Born: " + mBirthDate;
 	}
+	public void addTicketPurchase(TicketPurchase t) {
+		
+	}
 }

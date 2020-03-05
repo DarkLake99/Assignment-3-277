@@ -35,10 +35,12 @@ public abstract class Event implements Comparable<Event> {
 		return mDate;
 	}
 	
+	
 	@Override
 	public String toString()
 	{
 		return "Event: " + mEventName +" Venue: " + mVenueName.getName() + " Date: " + mDate + " Price: " + mTicketPrice;
 	}
+	public abstract void addTicketPurchase(TicketPurchase t);
 	
 }

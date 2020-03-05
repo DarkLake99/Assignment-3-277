@@ -22,4 +22,8 @@ public class MusicEvent extends Event {
 	{
 		return mBandName;
 	}
+	
+	public void addTicketPurchase(TicketPurchase t) {
+		
+	}
 }
