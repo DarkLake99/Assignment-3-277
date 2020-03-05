@@ -11,6 +11,22 @@ public class SportingEvent extends Event {
 	
 
 	public int compareTo(Event e) {
-		return 0;
+		
+
+				if(!(e instanceof SportingEvent)) return -1;
+				
+				SportingEvent c = (SportingEvent)e;
+						
+				String eventOneTeam = getTeamOne();
+				String eventTwoTeam = c.getTeamOne();
+				
+
+				return eventOneTeam.compareToIgnoreCase(eventTwoTeam);
+		
+	}
+	
+	public String getTeamOne()
+	{
+		return mTeamOne;
 	}
 }

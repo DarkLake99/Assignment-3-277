@@ -11,7 +11,15 @@ public class MusicEvent extends Event {
 	
 		MusicEvent m = (MusicEvent)e;
 		
-		//return this.mBandName.compareTo(m.mBandName);
-		return 0;
+		String bandOne = getBandName();
+		String bandTwo = m.getBandName();
+		
+		return bandOne.compareToIgnoreCase(bandTwo);
+		
+	}
+	
+	public String getBandName()
+	{
+		return mBandName;
 	}
 }
