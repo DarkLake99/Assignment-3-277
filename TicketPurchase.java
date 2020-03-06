@@ -30,5 +30,10 @@ public abstract class TicketPurchase
 		return date;
 	}
 	
-	public abstract String toString();
+	@Override
+	public String toString() {
+		return getType() + ", Subscriber: " + getSub() + ", Event: " + 
+	event.getEventName() + ", Purchase Date: " + DateUtil.getFormattedDate(date);
+	}
+	public abstract String getType();
 }

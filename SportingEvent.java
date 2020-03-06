@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class SportingEvent extends Event {
 	private String mTeamOne;
@@ -39,20 +38,9 @@ public class SportingEvent extends Event {
 	{
 		return "Teams: " + mTeamOne + " vs " + mTeamTwo;
 	}
-	
-	//TODO
-	public void addTicketPurchase(TicketPurchase t) 
-	{
-		
-	}
 	@Override
 	public String getType()
 	{
 		return "Sporting";
-	}
-	//TODO
-	public ArrayList<TicketPurchase> getTicketPurchases(String date) {
-		ArrayList<TicketPurchase> list = new ArrayList<TicketPurchase>();
-		return list;
 	}
 }
