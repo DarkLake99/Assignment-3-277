@@ -35,5 +35,6 @@ public abstract class TicketPurchase
 		return getType() + ", Subscriber: " + getSub() + ", Event: " + 
 	event.getEventName() + ", Purchase Date: " + DateUtil.getFormattedDate(date);
 	}
+	
 	public abstract String getType();
 }

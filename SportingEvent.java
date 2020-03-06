@@ -2,6 +2,7 @@
 public class SportingEvent extends Event {
 	private String mTeamOne;
 	private String mTeamTwo;
+	
 	public SportingEvent(String eventName, Venue vObj, String date, 
 			double ticketPrice, String teamOne, String teamTwo) {
 		super(eventName, vObj, date, ticketPrice);
@@ -38,6 +39,7 @@ public class SportingEvent extends Event {
 	{
 		return "Teams: " + mTeamOne + " vs " + mTeamTwo;
 	}
+	
 	@Override
 	public String getType()
 	{

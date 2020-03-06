@@ -17,12 +17,6 @@ public abstract class Event implements Comparable<Event> {
 		mTickets = new ArrayList<TicketPurchase>();
 	}
 	
-	/*@Override
-	public int compareTo()
-	{
-		return 0;
-	} */
-	
 	public String getEventName()
 	{
 		return mEventName;
@@ -41,11 +35,13 @@ public abstract class Event implements Comparable<Event> {
 	{
 		return mDate;
 	}
+	
 	@Override
 	public String toString()
 	{
 		return "Type: " + getType() +", Name: " + mEventName +", Venue: " + mVenueName + ", Occurs On: " + DateUtil.getFormattedDate(mDate) + ", Ticket Price: " + mTicketPrice + ", " + getPerformers();
 	}
+	
 	public void addTicketPurchase(TicketPurchase t) {
 		mTickets.add(t);
 	}

@@ -8,10 +8,6 @@ public class Venue implements Comparable<Venue> {
 		mName = name_input;
 		mCapacity = capacity_input;
 	}
-	@Override
-	public int compareTo(Venue v) {
-		return v.mCapacity- this.mCapacity;
-	}
 	public String getName() {
 		return mName;
 	}
@@ -23,5 +19,9 @@ public class Venue implements Comparable<Venue> {
 	public String toString()
 	{
 		return mName + ", Capacity: " + mCapacity;
+	}
+	@Override
+	public int compareTo(Venue v) {
+		return v.mCapacity- this.mCapacity;
 	}
 }
