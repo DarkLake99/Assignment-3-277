@@ -11,4 +11,10 @@ public class CashTicketPurchase extends TicketPurchase
 		super(sub, event, date);
 		cash = 0;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "   Cash, Subscriber: " + this.getSub() + ", Event: " + this.getEvent() + ", Purchase Date: " + this.getDate();
+	}
 }

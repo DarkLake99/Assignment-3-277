@@ -15,4 +15,20 @@ public abstract class TicketPurchase
 		date = DateUtil.convertStringDatetoCalendarDate(eveDate);
 	}
 	
+	public String getSub()
+	{
+		return sub;
+	}
+	
+	public Event getEvent()
+	{
+		return event;
+	}
+	
+	public Calendar getDate()
+	{
+		return date;
+	}
+	
+	public abstract String toString();
 }

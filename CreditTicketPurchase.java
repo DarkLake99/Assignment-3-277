@@ -10,5 +10,11 @@ public class CreditTicketPurchase extends TicketPurchase {
 		super(sub, event, date);
 		credit = 0;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "   Credit, Subscriber: " + this.getSub() + ", Event: " + this.getEvent() + ", Purchase Date: " + this.getDate();
+	}
 
 }
