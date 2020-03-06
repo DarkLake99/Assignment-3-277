@@ -38,4 +38,10 @@ public class MusicEvent extends Event {
 		ArrayList<TicketPurchase> list = new ArrayList<TicketPurchase>();
 		return list;
 	}
+	
+	@Override
+	public String getPerformers()
+	{
+		return "Band: " + mBandName;
+	}
 }

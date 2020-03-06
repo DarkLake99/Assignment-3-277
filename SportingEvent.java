@@ -28,8 +28,21 @@ public class SportingEvent extends Event {
 	{
 		return mTeamOne;
 	}
+	
+	public String getTeamTwo()
+	{
+		return mTeamTwo;
+	}
+	
+	@Override
+	public String getPerformers()
+	{
+		return "Teams: " + mTeamOne + " vs " + mTeamTwo;
+	}
+	
 	//TODO
-	public void addTicketPurchase(TicketPurchase t) {
+	public void addTicketPurchase(TicketPurchase t) 
+	{
 		
 	}
 	@Override
